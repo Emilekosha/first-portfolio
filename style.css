@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,500;0,600;0,700;0,800;1,100;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+/* fca311
+14213d */
+body {
+    background-color: #f1f1f1;
+    width: 100%;
+    height: 100vh;
+    margin: 0px auto;
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+    font-size: 62.5%;
+    
+}
+
+header{
+    background-color:#14213d ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    
+}
+
+.header_logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: underline;
+}
+
+span{
+    color: #fca311;
+    text-decoration: underline; 
+}
+
+.navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 18px;
+    list-style: none;
+    transition: all;
+
+}
+
+.navbar ul a{
+    text-decoration: none;
+    color: aliceblue;
+    cursor: pointer;
+    transition: ease-in-out;
+}
+
+.navbar ul a:hover{
+    color: #fca311;
+}
+
+.header_social{
+    display: flex;
+    gap: 25px;
+}
+
+.header_social a {
+   
+    color: #fca311;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.header_social a:hover{
+    opacity: 0.5;
+}
+
+main h1{
+    font-size: 30px;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px 15px;
+    color: #03045e;
+    font-weight: bold;
+}
+
+/* style section */
+
+section {
+    padding: 50px;
+}
+
+/* style section home */
+#home {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 80%;
+    background-color: #03045e;
+    align-items: center;
+    margin: auto; 
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.flex_item h2{
+   font-size: 40px;
+   margin-bottom: 10px;
+   color: #f1f1f1;
+   padding: 10px;
+   font-weight: 600;
+}
+
+.flex_item h3{
+    font-size: 20px;
+    color: #fca311;
+    margin-bottom: 10px;
+}
+
+.flex_item p{
+    font-size: 12px;
+    color: beige;
+}
+
+strong{
+    color: #fca311;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.flex-img img{
+    width: 300px;
+    height: 300px;
+    border-radius: 6px;
+}
+
+/* .section_head {
+    width: 50%;
+    text-align: center;
+    padding: 10px 50px;
+    margin: auto;
+} */
+
