@@ -207,3 +207,97 @@ strong{
 .service__content p {
     color: #000000;
 }
+
+/* style contact */
+
+#contact{
+    display: flex;
+    justify-content: space-between;
+    width: 85%;
+    margin: 40px auto;
+    background-color: #14213d;
+    border-radius: 10px;
+    padding: 40px 40px;
+}
+
+.left-column{
+    width: 45%;
+    padding: 10px;
+}
+
+.right-column{
+    width: 45%;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    color: #000000;
+}
+
+.contact{
+    color: #fff;
+}
+
+.contact h2{
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label{
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e5e5e5;
+    outline-color: #e5e5e5;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+textarea{
+    height: 100px;
+}
+
+button {
+    width: 125px;
+    display: inline-block;
+    color: #fff;
+    background-color: #fca311;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.content{
+    text-align: center;
+    padding: 20px;
+}
+
+.content h1{
+    font-size: 25px;
+    color: #fca311;
+}
+
+.content p{
+    margin: 8px 0px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.content h2{
+    margin-top: 20px;
+}
