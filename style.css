@@ -157,6 +157,7 @@ strong{
     text-decoration: underline;
     margin-bottom: 10px;
     font-weight: 900;
+    text-align: center;
 }
 
 .section_head p{
@@ -206,7 +207,84 @@ strong{
 
 .service__content p {
     color: #000000;
+    line-height: 1.5;
 }
+
+/* section portfolio */
+
+.portfolio-container {
+    width: 100%;
+    
+}
+
+.portfolio-container .portfolio-wrap {
+    padding-top: 10px;
+
+}
+
+.portfolio-images{
+    width: 85%;
+    margin: 0 auto;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    background-color: #edede9;
+    border-radius: 5px;
+
+}
+
+.portfolio-images img{
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+
+.portfolio{
+    width: 100%;
+    position: relative;
+}
+
+.section-image{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    padding: 5px;
+    display: block;
+    border-radius: 10px;
+}
+
+.section-image img{
+    width: 100%;
+}
+
+.caption{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    padding: 15px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.30s;
+}
+
+.caption:hover{
+    opacity: 1;
+}
+
+.caption p{
+    font-size: 13px;
+}
+
 
 /* style contact */
 
@@ -301,3 +379,191 @@ button {
 .content h2{
     margin-top: 20px;
 }
+
+/* footer */
+
+footer{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 900;
+    color: #03045e;
+    background-color: #d8d8d8;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+/* Large Devices */
+@media (max-width: 1200px) {
+    .portfolio-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex_item h2 {
+        font-size: 35px;
+    }
+
+    .flex_item h3 {
+        font-size: 18px;
+    }
+}
+
+/* Medium Devices */
+@media (max-width: 992px) {
+    .portfolio-images {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header_logo {
+        margin-bottom: 20px;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #home {
+        flex-direction: column;
+    }
+
+    .flex_item h2 {
+        font-size: 30px;
+    }
+
+    .flex_item h3 {
+        font-size: 16px;
+    }
+
+    .flex-img img {
+        width: 250px;
+        height: 250px;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 18px;
+        padding: 15px;
+    }
+}
+
+/* Small Devices */
+@media (max-width: 768px) {
+    .portfolio-images {
+        grid-template-columns: 1fr;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .header_social {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column {
+        width: 100%;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .left-column {
+        margin-bottom: 20px;
+    }
+
+    footer {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Extra Small Devices */
+@media (max-width: 576px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .right-column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .flex_item h2 {
+        font-size: 25px;
+    }
+
+    .flex_item h3 {
+        font-size: 14px;
+    }
+
+    .flex-img img {
+        width: 200px;
+        height: 200px;
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .left-column {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+
